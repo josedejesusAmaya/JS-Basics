@@ -1,0 +1,14 @@
+#my-table td {
+    width: 150px;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    background-color: green;
+    cursor: move;
+}
+
+.one {
+    background-color: red !important;
+}

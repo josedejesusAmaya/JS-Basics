@@ -13,11 +13,11 @@ function fibonacci(n) {
     if (n === 0) {
         sum = 1;
     }
-    sum = sum * 4;
+    // sum = sum * 4;
     console.log(sum);
 }
 
-// fibonacci(5);
+fibonacci(4);
 
 function perimeter(n) {
     const arr = [0, 1];
@@ -28,4 +28,4 @@ function perimeter(n) {
     return 4 * sum;
 }
 
-console.log(perimeter(0));
+// console.log(perimeter(0));

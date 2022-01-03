@@ -28,7 +28,13 @@ let n = new Number(2);
 let n2 = 2;
 /************************************** */
 
-/*
+function Sum() {
+  let acc = 0;
+  return function (params) {
+    return console.log(acc += params);
+  }
+}
+
 let sum1 = new Sum();
 sum1(3); // 3
 sum1(5); // 8
@@ -36,7 +42,7 @@ sum1(2); // 10
 let sum2 = new Sum();
 sum2(1); // 1
 sum1(1); // 11
-*/
+
 
 // let arr1 = new Array(2); // two empty slots [ , ]
 // let arr2 = [2]; // [2]
@@ -55,7 +61,7 @@ sum1(1); // 11
 
 function foo() {
   // with let prints 0,1 after x sec. With var prints (2) 3 after x sec.
-  for (let i = 0; i < 2; i++) { 
+  for (let i = 0; i < 2; i++) {
         setTimeout(() => {
           console.log(i);
         }, 3000);
@@ -83,4 +89,4 @@ function foo() {
   // console.log('Outside the loop:' + counter);
 }
 
-foo();
+// foo();

@@ -28,20 +28,20 @@ let n = new Number(2);
 let n2 = 2;
 /************************************** */
 
-function Sum() {
+function Sum2() {
   let acc = 0;
   return function (params) {
     return console.log(acc += params);
   }
 }
 
-let sum1 = new Sum();
-sum1(3); // 3
-sum1(5); // 8
-sum1(2); // 10 
-let sum2 = new Sum();
-sum2(1); // 1
-sum1(1); // 11
+let sum3 = new Sum2();
+sum3(3); // 3
+sum3(5); // 8
+sum3(2); // 10 
+let sum4 = new Sum2();
+sum4(1); // 1
+sum3(1); // 11
 
 
 // let arr1 = new Array(2); // two empty slots [ , ]
